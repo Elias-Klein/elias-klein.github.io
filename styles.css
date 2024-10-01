@@ -66,12 +66,6 @@ a {
 }
 
 .fancy:hover > .outer > .inner > .letter {
-  background: linear-gradient(
-    to right,
-    var(--blue),
-    var(--green),
-    var(--blue)
-  );
   background-size: 1000%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -130,6 +124,14 @@ a {
 
 body.menu-toggled > .meta-link > span {
   color: rgb(30, 30, 30);
+}
+
+#source-link {
+  bottom: 60px;
+}
+
+#source-link > i {
+  color: rgb(94, 106, 210);
 }
 
 .meta-link {
