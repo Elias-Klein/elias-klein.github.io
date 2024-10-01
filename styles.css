@@ -18,18 +18,12 @@ body {
   font-family: "Rubik", sans-serif;
   margin: 0;
   text-transform: uppercase;
-  transition: opacity 250ms ease;
 }
 
 a {
   text-decoration: none;
 }
 
-#text:has(.fancy:hover) .word:not(.fancy:hover) {
-  opacity: 1; /* Ensure opacity remains consistent */
-}
-
-/* Removed all fancy hover effects for color changes */
 .fancy span {
   display: inline-block;
 }
@@ -43,14 +37,14 @@ a {
 }
 
 .fancy:hover > .outer > .inner {
-  animation: float 5s ease infinite;
+  animation: float 5s ease infinite; /* Keep float animation */
 }
 
-.fancy:hover > .outer > .inner > .letter {
-  animation: none; /* Disable animation for color */
+.fancy > .outer > .inner > .letter {
+  color: white; /* Ensure letters remain white */
 }
 
-/* Keep the original float effect without color changes */
+/* Float animation */
 @keyframes float {
   from, to {
     transform: translateY(-0%);
