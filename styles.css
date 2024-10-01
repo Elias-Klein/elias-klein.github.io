@@ -134,6 +134,10 @@ body.menu-toggled > .meta-link > span {
   color: rgb(94, 106, 210);
 }
 
+#yt-link > i {
+  color: rgb(239, 83, 80);
+}
+
 .meta-link {
   align-items: center;
   backdrop-filter: blur(3px);
