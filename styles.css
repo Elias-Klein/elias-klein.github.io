@@ -78,8 +78,8 @@ a {
     var(--blue)
   );
   background-size: 1000%;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: none;
+  -webkit-text-fill-color: white;
   animation: background-pan 150s linear infinite;
 }
 
