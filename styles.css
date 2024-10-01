@@ -15,7 +15,6 @@ body {
   transition: opacity 250ms ease;
 }
 
-
 #text:has(.fancy:hover) .word:not(.fancy:hover) {
   opacity: 0.2;
 }
