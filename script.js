@@ -18,4 +18,4 @@ const enhance = id => {
     element.appendChild(outer);
   });
 }
-enhance("channel-link");
+enhance("link");
