@@ -66,7 +66,13 @@ a {
 }
 
 .fancy:hover > .outer > .inner > .letter {
-    background-size: 1000%;
+  background: linear-gradient(
+    to right,
+    var(--blue),
+    var(--green),
+    var(--blue)
+  );
+  background-size: 1000%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: background-pan 150s linear infinite;
