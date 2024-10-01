@@ -1,4 +1,5 @@
 const rand = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
+
 const enhance = id => {
   const element = document.getElementById(id),
         text = element.innerText.split("");
@@ -18,4 +19,5 @@ const enhance = id => {
     element.appendChild(outer);
   });
 }
-enhance("channel-link");
+
+enhance("email-link");
