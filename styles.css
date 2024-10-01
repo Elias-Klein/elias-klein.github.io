@@ -1,3 +1,8 @@
+:root {  
+  --green: rgb(42, 252, 152);
+  --blue: rgb(41, 121, 255);
+}
+
 @keyframes float {
   from, to {
     transform: translateY(-0%);
@@ -18,11 +23,10 @@
   }
 }
 
-
 body {
   height: 100vh;
   background-color: black;
-  margin: 0;
+  margin: 0rem;
   overflow: hidden;
   display: grid;
   place-items: center;
@@ -37,7 +41,7 @@ body {
   color: white;
   font-size: clamp(2rem, 8vw, 10rem);
   font-family: "Rubik", sans-serif;
-  margin: 0;
+  margin: 0rem;
   text-transform: uppercase;
   transition: opacity 250ms ease;
 }
@@ -66,11 +70,19 @@ a {
   animation: float 5s ease infinite;
 }
 
-.fancy > .outer > .inner > .letter {
-  color: white;
+.fancy:hover > .outer > .inner > .letter {
+  background: linear-gradient(
+    to right,
+    var(--blue),
+    var(--green),
+    var(--blue)
+  );
+  background-size: 1000%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: background-pan 150s linear infinite;
 }
 
-/* Other hover effects remain unchanged */
 .fancy:hover > .outer:nth-child(1) { transform: translate(-80%, 60%) rotate(8deg); }
 .fancy:hover > .outer:nth-child(2) { transform: translate(-40%, 20%) rotate(4deg); }
 .fancy:hover > .outer:nth-child(3) { transform: translate(-10%, 60%) rotate(-6deg); }
